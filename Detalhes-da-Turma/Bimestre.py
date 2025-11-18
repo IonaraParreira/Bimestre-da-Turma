@@ -166,7 +166,7 @@ while True:
         exibir_relatorio_individual(df_relatorio_completo, mat_aluno_editado)
 
     # 6. Opcional: Salvar o resultado final no CSV
-    df_final.to_csv('notas.csv', index=False)
+    df_final.to_csv('Detalhes-da-Turma/Notas.csv', index=False)
     
 # --- EXIBIÇÃO FINAL DE TODOS OS RELATÓRIOS APÓS O FIM DO LOOP ---
 
