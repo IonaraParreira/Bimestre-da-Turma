@@ -4,10 +4,10 @@ import numpy as np
 # --- 1 Leitura dos Arquivos CSV ---
 
 # O DataFrame df_notas contém as notas b1, b2, b3, b4, média, situação
-df_notas = pd.read_csv('Detalhes-da-Turma/notas.csv')
+df_notas = pd.read_csv('Detalhes-da-Turma/Notas.csv')
 
 # df_alunos contém os dados cadastrais (Nome, CPF, etc)
-df_alunos = pd.read_csv('Detalhes-da-Turma/alunos.csv')
+df_alunos = pd.read_csv('Detalhes-da-Turma/Alunos.csv')
 
 # Unir as tabelas para a exibição inicial
 df_geral = pd.merge(df_notas, df_alunos[['Matrícula', 'Nome_Aluno']], on='Matrícula', how='left')
