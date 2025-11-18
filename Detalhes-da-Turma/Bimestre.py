@@ -12,7 +12,7 @@ df_alunos = pd.read_csv('Detalhes-da-Turma/Alunos.csv')
 # Unir as tabelas para a exibição inicial
 df_geral = pd.merge(df_notas, df_alunos[['Matrícula', 'Nome_Aluno']], on='Matrícula', how='left')
 
-print("--- Dados Carregados ---")
+print("--- Dados Carregados ---") 
 print(df_geral[['Matrícula', 'Nome_Aluno', 'Bimestre_1', 'Bimestre_2', 'Bimestre_3']].head())
 print("-" * 80)
 
