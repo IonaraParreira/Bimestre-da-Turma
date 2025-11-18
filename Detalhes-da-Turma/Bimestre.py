@@ -4,7 +4,7 @@ import numpy as np
 # --- 1 Leitura dos Arquivos CSV ---
 
 # O DataFrame df_notas contém as notas b1, b2, b3, b4, média, situação
-df_notas = pd.read_csv('notas.csv')
+df_notas = pd.read_csv('Detalhes-da-Turma/notas.csv')
 
 # df_alunos contém os dados cadastrais (Nome, CPF, etc)
 df_alunos = pd.read_csv('alunos.csv')
