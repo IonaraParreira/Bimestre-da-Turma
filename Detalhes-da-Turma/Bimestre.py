@@ -7,7 +7,7 @@ import numpy as np
 df_notas = pd.read_csv('Detalhes-da-Turma/notas.csv')
 
 # df_alunos contém os dados cadastrais (Nome, CPF, etc)
-df_alunos = pd.read_csv('alunos.csv')
+df_alunos = pd.read_csv('Detalhes-da-Turma/alunos.csv')
 
 # Unir as tabelas para a exibição inicial
 df_geral = pd.merge(df_notas, df_alunos[['Matrícula', 'Nome_Aluno']], on='Matrícula', how='left')
